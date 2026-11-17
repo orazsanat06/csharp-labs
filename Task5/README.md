@@ -30,3 +30,9 @@
 - Не жасалды: Claude Git репозиторийін, `.gitignore` мен түбірдегі README-ді, `Program.cs` кодын (матрица, `PrintMatrix`, нұсқаның әдісі) және осы есептің жобасын жазды.
 - Тексеру: Claude бұл ортада .NET жоқ болғандықтан, `Random(seed)` алгоритмін Python-да қайталап, күтілетін нәтижелерді есептеді. Қолмен есептеген жауаптар шығарылған матрицаның диагональдан жоғары элементтерін бір-бірлеп қарап табылды.
 - Кодқа енгізген өзгерісім: (мұнда өзіңіз не өзгерткеніңізді жазыңыз)
+
+## Қорғау видеолары
+
+1. 1 видео: <https://drive.google.com/file/d/13OpPRpPG0o-lsNghozBjfgHc4unnVeZs/view?usp=sharing>
+2. 2 видео: <https://drive.google.com/file/d/1aVq6CNMJYrbQ1giRWJEfXsxTh-HIJts1/view?usp=sharing>
+3. 3 видео: <https://drive.google.com/file/d/1F0Dy42b8uxlewOkjFM-tEUWZ_K5MhOIA/view?usp=sharing>
