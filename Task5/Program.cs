@@ -9,32 +9,21 @@ for (int i = 0; i < n; i++)
 Console.WriteLine("Матрица:");
 PrintMatrix(matrix);
 
-int count = CountEvenPositiveAboveDiagonal(matrix, out long product);
-if (count == 0)
-{
-    Console.WriteLine("Бас диагональдан жоғары жұп оң элементтер жоқ.");
-}
-else
-{
-    Console.WriteLine($"Бас диагональдан жоғары жұп оң элементтер саны = {count}");
-    Console.WriteLine($"Бас диагональдан жоғары жұп оң элементтердің көбейтіндісі = {product}");
-}
-
-// Бас диагональдан жоғары (j > i) жұп оң элементтердің санын қайтарады,
+int count = CountEvenNegativeBelowDiagonal(matrix);
+Console.WriteLine($"Бас Диагональдан Төмен жұп теріс элементер саны = {count}");
+// Бас диагональдан төмен (j < i) жұп теріс санын қайтарады 
 // көбейтіндісін product параметрі арқылы береді.
-static int CountEvenPositiveAboveDiagonal(int[,] m, out long product)
+static int CountEvenNegativeBelowDiagonal(int[,] m)
 {
     int count = 0;
-    product = 1;
     for (int i = 0; i < m.GetLength(0); i++)
     {
-        for (int j = i + 1; j < m.GetLength(1); j++)
+        for (int j = 0 ; j < i; j++)
         {
             int value = m[i, j];
-            if (value > 0 && value % 2 == 0)
+            if (value < 0 && value % 2 == 0)
             {
                 count++;
-                product *= value;
             }
         }
     }
